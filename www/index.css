@@ -1,0 +1,317 @@
+/* default style */
+
+html, body{
+  padding: 0;
+  margin: 0;
+  font-family: Arial;
+  width: 100%;
+  height: 100%;
+}
+
+input {
+  box-sizing: border-box;
+}
+
+.orange_text {
+  color: orange;
+}
+
+/* end default style */
+
+.main_container, .social_container, .header_container{
+  display: flex;
+  width: 1180px;
+  margin: 0 auto;
+  gap: 15px;
+}
+
+.wrapper {
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.wrapper header_container{
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+
+.wrapper main_container{
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+
+/* header */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+}
+
+.burger-menu {
+  display: none;
+}
+
+.menu_body{
+  flex: 90%;
+  margin:0 auto;
+  text-align:right;
+  height: 50px;
+}
+
+.header_row {
+  display: flex;
+  width: 100%;
+}
+.header_logo{
+  flex: 10%;
+}
+.header img{
+  list-style-type: none;
+  padding: 15px;
+  margin: 0;
+}
+.header_row ul{
+  list-style-type: none;
+  padding: 15px;
+  margin: 0;
+  color: white;
+}
+
+.header_row ul li {
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding-right: 15px;
+  font-size: 15px;
+}
+
+.header_row ul li:hover {
+  background-color: #333;
+}
+
+.header_row ul li a:visited {
+  display: block;
+  padding: 15px;
+  color: #CCC;
+  text-decoration: none;
+}
+/* end header */
+
+/* first_block */
+
+.first_block{
+  background-color: gray;
+  margin-top: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-height: 100%;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row_column{
+  flex: 100%;
+}
+
+.row_column_1 {
+ flex: 65%;
+
+}
+
+.row_column_2 {
+  flex: 35%;
+}
+
+.info:after{
+  content: '';
+  display: block;
+  width: 15%;
+  margin-left: 0px;
+  text-decoration: solid;
+  margin-bottom: 15px;
+  height: 2px;
+  background-color: white;
+}
+
+.first_block button{
+  background-color: grey;
+  border-color: white;
+  color: white;
+  margin-bottom: 15px;
+  border: 2px solid white;
+  font-size: 15px;
+  padding: 15px;
+}
+
+.first_block h1{
+  text-align:center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: lightgrey;
+  font-size: 20px;
+}
+
+.first_block h5{
+  color:white;
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-transform: uppercase;
+  margin: 0px 20px 20px 0px;
+}
+
+.first_block h6{
+color:white;
+font-size: 15px;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+margin: 0px 20px 20px 0px;
+text-decoration: none;
+}
+
+.first_block form{
+margin: 0px 20px 20px 0px;
+text-align: center;
+}
+.first_block form label{
+  font-weight: bold;
+  display: inline-block;
+  width: 100%;
+  text-align:center;
+  font-size: 15px;
+  padding-top: 15px;
+  background-color: lightgrey;
+  height: 40px;
+  border: none ;
+  border-radius: 0px;
+
+}
+.first_block form input{
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  border-style: none;
+}
+
+.first_block .form-auth #submit {
+  background-color: orange;
+  color: white;
+  width: 100%;
+}
+
+
+/* social page */
+.social {
+border-bottom: 2px solid #ccc;
+}
+
+.social_row {
+  display: flex;
+  background-color: white;
+  width: 100%;
+}
+
+.social_text{
+  flex: 30%;
+  padding-left: 15px;;
+}
+.social_row h1{
+  font-size: 12px;
+}
+
+.social_row h2{
+  font-size: 8px;
+}
+
+.social_header{
+  flex: 70%;
+  margin:0 auto;
+  text-align:right;
+  height: 50px;
+}
+.social_row ul{
+  list-style-type: none;
+  padding: 20px;
+  margin: 0;
+}
+
+.social_row ul li {
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding-right: 15px;
+  font-size: 15px;
+}
+
+
+
+/* second_block */
+.second_block {
+  margin-top: 70px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 100%;
+}
+
+.tab {
+  display: flex;
+  margin: 25px 0;
+  width: 100%;
+  position: relative;
+
+}
+.tab label {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 10px 10px 0 0;
+}
+
+.main info_block{
+  flex: 50%;
+}
+.main button{
+  border: none;
+  background-color: orange;
+  color: white;
+}
+.main image_block{
+  flex: 40%;
+  align-items: center;
+  position: absolute;
+
+}
+
+
+
+
+
+
+.tab_block {
+  width: 114px;
+  flex-shrink: 0;
+}
+
+.tab_block label {
+  width: 100%;
+  display: flex;
+  height: 114px;
+  background-color: #ccc;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+
+.tab_block label.active {
+  background-color: orange;
+}
+.image_block {
+  display: flex;
+  align-items: center;
+}
+a.header_social_img {
+  display: block;
+}
+a.header_social_img img {
+  display: block;
+}

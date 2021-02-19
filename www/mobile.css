@@ -1,0 +1,38 @@
+
+@media (max-width: 1200px){
+  .container{
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 992px){
+  .container{
+    max-width: 750px;
+  }
+
+}
+
+@media (max-width: 767px){
+  .container{
+    max-width: none;
+  }
+  .header_menu ul {
+    display: none;
+  }
+  .burger-menu {
+    display: block;
+  }
+  .header_menu ul.header_list.show {
+      display: block;
+      position: absolute;
+      background-color: black;
+      right: 0;
+      max-width: 130px;
+      top: 60px;
+      z-index: 9;
+  }
+  .header_menu ul.header_list li {
+      display: block;
+      width: 100%;
+  }
+}
